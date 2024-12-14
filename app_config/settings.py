@@ -51,8 +51,8 @@ LOGGING= {
     'handlers': {
         'file': {
             'level':'ERROR',
-            'class':'logging.Filehandler',
-            'filename':BASE_DIR/'logs/errors.log', # ensure logs directory exists
+            'class':'logging.FileHandler',
+            'filename':'logs/errors.log', # ensure logs directory exists
         },
     },
 
