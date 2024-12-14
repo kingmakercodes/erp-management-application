@@ -34,7 +34,7 @@ class Employee(models.Model):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, *kwargs)
-        print(f'Initialized AbstractUser: {self}')
+        print(f'Initialized Employee: {self}')
 
     def set_password(self, password):
         self.password_hash= self._hasher.hash(password)
